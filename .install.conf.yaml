@@ -18,6 +18,7 @@
     ~/.ssh/config: ssh/config
     ~/.vimrc_local:
     ~/.zshrc_local_after:
+    ~/.iTerm2: iTerm2  
 
 - shell:
   - git submodule sync --recursive
