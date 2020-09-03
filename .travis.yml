@@ -5,7 +5,7 @@ sudo: false
 
 before_script:
   - mkdir -p ~/dotfiles-install-dir
-  - git clone https://github.com/anishathalye/dotfiles
+  - git clone https://github.com/smanelli/dotfiles
   - HOME=~/dotfiles-install-dir dotfiles/install
 
 script:

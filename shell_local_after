@@ -15,14 +15,14 @@ alias gpgst='gpg2 -k --list-options show-uid-validity'
 alias gpgsgn='gpg2 --ask-cert-level --edit-key'
 alias open-emacs='open -a /Applications/Emacs.app'
 alias e='open-emacs'
-
+alias ls='ls -G'
 # Sync and Backup
-DOCUMENT_ROOT="$HOME/Documents/Anish"
+DOCUMENT_ROOT="$HOME/Documents"
 # Backup
-BORGPREFIX="mbp-"
+BORGPREFIX="imac-"
 BORGSHIRE='shire:borg'
 alias backup-shire="do-borg-backup $DOCUMENT_ROOT $BORGSHIRE $BORGPREFIX $HOME/.borg.shire"
-BORGSERVER='server:/media/raid2/borg/anish'
+BORGSERVER='server:/media/raid2/borg/smanelli'
 alias backup-server="do-borg-backup $DOCUMENT_ROOT $BORGSERVER $BORGPREFIX"
 
 # Make a 4GB (2048 * 4096M) RAM Disk
@@ -58,7 +58,7 @@ test -r ~/.opam/opam-init/init.zsh && . ~/.opam/opam-init/init.zsh > /dev/null 2
 
 # Go
 
-export GOPATH="$HOME/Documents/Anish/Developer"
+export GOPATH="$HOME/Documents/Stefano/Developer"
 path_prepend "$GOPATH/bin"
 
 # SOCKS proxy
@@ -87,4 +87,4 @@ tor-off() {
 
 # GPG Key
 
-GPGKEY="0x72EE4824FA6EFF1FE750A015C3F6E4F5086B3B32"
+GPGKEY=""

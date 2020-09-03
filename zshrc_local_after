@@ -1,4 +1,19 @@
 # Named directories
-hash -d src="$HOME/Documents/Anish/Developer/src"
-hash -d labsix="$HOME/Documents/Anish/Developer/src/labsix"
-hash -d pdos="$HOME/Documents/Anish/Developer/src/pdos"
+hash -d src="$HOME/Documents/Stefano/Developer/src"
+hash -d labsix="$HOME/Documents/Stefano/Developer/src/labsix"
+hash -d pdos="$HOME/Documents/Stefano/Developer/src/pdos"
+
+# ZSH / BASH users
+# Add this to your .env, .bashrc, .zshrc, or whatever file you're using for environment
+
+man() {
+    env \
+	LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+	LESS_TERMCAP_md=$(printf "\e[1;31m") \
+	LESS_TERMCAP_me=$(printf "\e[0m") \
+	LESS_TERMCAP_se=$(printf "\e[0m") \
+	LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
+	LESS_TERMCAP_ue=$(printf "\e[0m") \
+	LESS_TERMCAP_us=$(printf "\e[1;32m") \
+	man "$@"
+}
