@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Terminal=false
+Name=xbindkeys
+Exec=/usr/bin/xbindkeys
+Icon=applications-system
+Comment=xbindkeys
+#Categories=GNOME;GTK;System;

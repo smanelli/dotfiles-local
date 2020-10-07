@@ -17,6 +17,8 @@
     ~/.ssh/config: ssh/config
     ~/.local/bin: local/bin
     ~/.config/systemd/user: config/systemd/user
+    ~/.xbindkeysrc:
+    ~/.config/autostart/xbindkeys.desktop: config/autostart/xbindkeys.desktop
 
 - shell:
   - git submodule sync --recursive
